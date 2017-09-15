@@ -85,7 +85,7 @@ public class StudentGroup implements StudentArrayOperation {
 	public void remove(int index) {
 		// Add your implementation here
 		students[index] = ArrayUtils.removeElement(students[index], index)
-		//Completed.
+		//To be reviewed.
 	}
 
 	@Override
@@ -96,7 +96,7 @@ public class StudentGroup implements StudentArrayOperation {
 				students[i] = ArrayUtils.removeElement(students[i], student)
 			}
 		}
-		//Completed.
+		//To be reviewed.
 	}
 
 	@Override
