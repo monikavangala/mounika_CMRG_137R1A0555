@@ -84,12 +84,19 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void remove(int index) {
 		// Add your implementation here
-		students[] = ArrayUtils.removeElement(students[], index)
+		students[index] = ArrayUtils.removeElement(students[index], index)
+		//Completed.
 	}
 
 	@Override
 	public void remove(Student student) {
-		// Add your implementation here
+		// Add your implementation here		
+		for(i=0; i<=students.length; i++) {
+			if (students[i]==student) {
+				students[i] = ArrayUtils.removeElement(students[i], student)
+			}
+		}
+		//Completed.
 	}
 
 	@Override
